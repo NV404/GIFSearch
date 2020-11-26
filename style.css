@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background-color: black;
+}
+#searchbox{
+    border-radius: 25px;
+    width: 50vw;
+    height: 4vh;
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 20px;
+    background-color: #3d5af1;
+    color: white;
+    border: none;
+}
+#searchbutton{
+    border-radius: 50%;
+    margin-top: 10px;
+    width: 55px;
+    height: 55px;
+    margin-left: 15px;
+    border: none;
+    background-color: #0fc4e4;
+    transition: all 0.5s;
+}
+#load button{
+    border-radius: 25px;
+    margin-top: 10px;
+    margin-left: 15px;
+    border: none;
+    background-color: #023186;
+    color: white;
+    font-size: 18px;
+    padding: 12px;
+}
+#searchbutton:hover{
+    background-color: #64e2f8;
+}
+#result{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row wrap;
+    max-width: 100vw;
+}
+#result img{
+    border-radius: 25px;
+    padding: 10px;
+    max-width: 300px;
+    max-height: 200px;
+}
+#result img:before { 
+    content: "f1c5" " " attr(alt);
+    background-color: yellow;
+    display: block;
+    position: absolute; 
+    z-index: 2; 
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    height: 100%; 
+}
+input:focus {
+    outline:none !important;
+}
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading {
+    font-size: 100px;
+    letter-spacing: 5px;
+    margin: 16px;
+    background: -o-linear-gradient(45deg,#ff8a00,#e52e71,#044bea,#7a00ff);
+    background: linear-gradient(45deg,#ff8a00,#e52e71,#044bea,#7a00ff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 300% 300%;
+    -webkit-animation: gradient-text 8s ease infinite;
+            animation: gradient-text 8s ease infinite;
+    
+  }
+  @-webkit-keyframes gradient-text {
+    0% {
+      background-position: 0% 50%;
+    }
+      50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  @keyframes gradient-text {
+    0% {
+      background-position: 0% 50%;
+    }
+      50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+
