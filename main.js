@@ -13,7 +13,7 @@ function startp() {
     count1 = 0;
     var input = document.getElementById("searchbox").value;
     document.getElementById("result").innerHTML = "";
-    xhr = $.get("http://api.giphy.com/v1/gifs/search?q=" + input + "&api_key=YOUR_API_KEY_&limit=40");
+    xhr = $.get("https://api.giphy.com/v1/gifs/search?q=" + input + "&api_key=YOUR_API_KEY_&limit=40");
     gifloop();
     load.innerHTML += '</br><button onclick="gifloop();">Load More</button>';
 
